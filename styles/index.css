@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.gradientBubble {
+    width: 572px;
+    height: 572px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 70%);
+}
+
+
+.body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.orbitron {
+    font-family: "Orbitron", sans-serif !important;
+}
+
+.oswald> {
+    font-family: "Oswald", sans-serif !important;
+}
+
+.im-fell-great-primer-sc-regular {
+    font-family: "IM Fell Great Primer SC", serif !important;
+}
+
+.gradient-btn {
+    background: linear-gradient(to right, #BC3CD8, #C54B8C);
+    padding: 13px 24px;
+}

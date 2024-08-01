@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "../../../styles/index.css";
 import Pwa from "./Pwa";
+import NavBar from "../shared/Navbar";
 
 
 export const metadata: Metadata = {
@@ -12,8 +13,9 @@ export const metadata: Metadata = {
 export default function PublicLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-            <body>
+            <body className="bg-[#010207] text-white">
                 <Pwa>
+                    <NavBar/>
                     {children}
                 </Pwa>
             </body>
