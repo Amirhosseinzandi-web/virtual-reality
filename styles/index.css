@@ -39,3 +39,36 @@
 .mobile-menu {
     background: linear-gradient(to right, #bb3cd832, #c54b8c48);
 }
+
+.gradient-border {
+    width: 372px;
+    height: 304px;
+    border: 2px solid #EBA9FFCC;
+    position: absolute;
+    transform-origin: center;
+    transform: rotateX(-46deg) rotateY(-12deg);
+    left: -28px;
+    top: -121px;
+    border-radius: 50%;
+}
+
+.shape-polygon {
+    clip-path: polygon(0 0, 82% 0, 100% 13%, 100% 100%, 0% 100%);
+}
+
+.shape-polygon-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.shape-polygon-item::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #010207;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0 0, 82% 0, 100% 13%, 100% 100%, 0% 100%);
+}

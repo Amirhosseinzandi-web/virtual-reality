@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function PublicLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang="en">
-            <body className="bg-[#010207] text-white">
+        <html lang="en" className="overflow-x-hidden">
+            <body className="bg-[#010207] text-white overflow-x-hidden">
                 <Pwa>
                     <HeaderComponent />
                     {children}
