@@ -35,3 +35,7 @@
     background: linear-gradient(to right, #BC3CD8, #C54B8C);
     padding: 13px 24px;
 }
+
+.mobile-menu {
+    background: linear-gradient(to right, #bb3cd832, #c54b8c48);
+}
