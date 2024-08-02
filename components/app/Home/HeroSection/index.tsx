@@ -10,6 +10,7 @@ import picThree from "../../../../public/pictures/pic3.png";
 import picFour from "../../../../public/pictures/pic4.png";
 import experiencePicOne from "../../../../public/pictures/experience-pic-one.png"
 import experiencePicTwo from "../../../../public/pictures/experience-pic-two.png"
+import startsLogo from "../../../../public/pictures/stars.svg"
 
 
 
@@ -70,6 +71,7 @@ const HeroSection = () => {
                 >
                     <div className="w-[309px] h-[325px] bg-[#534686] rounded-b-full rounded-tl-[120rem] rounded-tr-[480rem] mt-[110px] relative lg:right-16 flex flex-col">
                         <Image src={heroLogo} width={1200} priority={true} height={1200} alt="logo" className=" w-[320px] h-[238.5px] absolute top-[-65px] left-0 object-cover" />
+                        <Image src={startsLogo} width={52} height={52} alt="logo" className="absolute top-[-109px] left-[271px]" />
                         <div className="gradient-border"></div>
                         <div className="mt-[170px] mx-auto flex flex-col items-center">
                             <p className="orbitron font-extrabold text-[19px]">{home.cinematicVirtual}</p>
@@ -82,14 +84,16 @@ const HeroSection = () => {
 
             <section className="hero-section-bottom flex flex-wrap min-h-[402px]">
                 <div className="w-full lg:w-[70%] flex gap-[19px]">
-                    <div className="w-auto">
+                    <div className="w-auto relative">
+                        <div className="gradientBubble absolute z-[-1] top-0 left-[-340px] translate-y-[-50%]"></div>
                         <div className="w-[205px] h-[302px] shape-polygon shape-polygon-item bg-[#EBA9FFCC] flex justify-center items-center">
                             <figure className="w-[90%] h-[90%] relative shape-polygon">
                                 <Image src={experiencePicOne} alt="logo" width={1300} height={1300} className="object-cover w-full h-full" />
                             </figure>
                         </div>
                     </div>
-                    <div className="w-auto flex items-end">
+                    <div className="w-auto flex items-end relative">
+                        <div className="gradientBubble absolute z-[-1] lg:top-[-45px] lg:right-[-640px] translate-y-[-50%]"></div>
                         <div className="w-[207px] h-[277px] shape-polygon shape-polygon-item bg-[#EBA9FFCC] flex justify-center items-center">
                             <figure className="w-[90%] h-[90%] relative shape-polygon">
                                 <Image src={experiencePicTwo} alt="logo" width={1300} height={1300} className="object-cover w-full h-full" />
