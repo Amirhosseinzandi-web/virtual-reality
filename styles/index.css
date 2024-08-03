@@ -79,10 +79,16 @@
     content: "";
     position: absolute;
     width: 99%;
-    height: 99%;
+    height: 98%;
     background: #534686;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     clip-path: polygon(0% 0%, 92% 0%, 100% 35%, 100% 100%, 0% 100%);
+}
+
+.blur-content {
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.4px);
 }
