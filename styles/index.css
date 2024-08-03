@@ -56,12 +56,8 @@
     clip-path: polygon(0 0, 82% 0, 100% 13%, 100% 100%, 0% 100%);
 }
 
-.shape-polygon-item {
-    position: relative;
-    overflow: hidden;
-}
 
-.shape-polygon-item::before {
+.shape-polygon-item-pic::before {
     content: "";
     position: absolute;
     width: 99%;
@@ -71,4 +67,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     clip-path: polygon(0 0, 82% 0, 100% 13%, 100% 100%, 0% 100%);
+}
+
+
+.shape-polygon-div {
+    clip-path: polygon(0% 0%, 92% 0%, 100% 35%, 100% 100%, 0% 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #AA14F0 100%);
+}
+
+.shape-polygon-item-div::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background: #534686;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0% 0%, 92% 0%, 100% 35%, 100% 100%, 0% 100%);
 }
