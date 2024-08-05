@@ -1,3 +1,4 @@
+import CompanyValuesComponent from "./CompanyValues";
 import HeroSection from "./HeroSection";
 import ProductShowcase from "./ProductShowcase";
 import Testimonials from "./Testimonials";
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <HeroSection />
                 <ProductShowcase/>
                 <Testimonials/>
+                <CompanyValuesComponent/>
             </main>
             
         </>

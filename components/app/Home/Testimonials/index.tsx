@@ -9,38 +9,33 @@ import Image from "next/image";
 const Testimonials = () => {
     const { home } = pageLevelLocalization
     return (
-        <>
-            <section className="p-[27px] bg-gradient-purple mt-[53px] rounded-[7px] min-h-[161px] relative">
-                <div className="flex flex-col items-center gap-[18px] mx-auto text-center mb-4">
-                    <p className="orbitron text-base md:text-[19px] tracking-[-2%] font-bold">{home.whatOurClients.title}</p>
-                    <p className="text-[9px] tracking-[-2%] leading-[11px] text-white/85 max-w-[318px]">{home.whatOurClients.caption}</p>
-                </div>
-                <div className="grid justify-center items-center grid-cols-3 w-full gap-[8px] absolute left-[50%] translate-x-[-50%] px-[13px]">
-                    {
-                        home.whatOurClients.smallBoxes.map((item, ind) => (
-                            <div key={ind} className="rounded-[7px] min-h-[90px] md:min-h-[81px] py-[5px] px-[10px] flex flex-col gap-2 small-boxes-bg">
-                                <h3 className="text-[5px] text-[#F7B603] font-bold">{item.title.slice(0, 8)}<span className="text-white">{item.title.slice(8)}</span></h3>
-                                <p className="text-[5px] leading-[9px] tracking-[-2%]">{item.caption}</p>
-                                <div className="flex items-center gap-[6px] w-fit">
-                                    <div className="overflow-hidden">
-                                        <figure className="w-[19px] h-[19px] rounded-full overflow-hidden">
-                                            <Image src={item.src} alt={item.alt} className="object-cover w-full h-full" />
-                                        </figure>
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <p className="font-medium text-[5px] tracking-[-2%]">{item.name}</p>
-                                        <p className="font-medium text-[5px] tracking-[-2%] text-[#EB4468]">{item.username}</p>
-                                    </div>
+        <section className="p-[27px] bg-gradient-purple mt-[53px] rounded-[7px] min-h-[161px] relative">
+            <div className="flex flex-col items-center gap-[18px] mx-auto text-center mb-4">
+                <p className="orbitron text-base md:text-[19px] tracking-[-2%] font-bold">{home.whatOurClients.title}</p>
+                <p className="text-[9px] tracking-[-2%] leading-[11px] text-white/85 max-w-[318px]">{home.whatOurClients.caption}</p>
+            </div>
+            <div className="grid justify-center items-center grid-cols-3 w-full gap-[8px] absolute left-[50%] translate-x-[-50%] px-[13px]">
+                {
+                    home.whatOurClients.smallBoxes.map((item, ind) => (
+                        <div key={ind} className="rounded-[7px] min-h-[90px] md:min-h-[81px] py-[5px] px-[10px] flex flex-col gap-2 small-boxes-bg">
+                            <h3 className="text-[5px] text-[#F7B603] font-bold">{item.title.slice(0, 8)}<span className="text-white">{item.title.slice(8)}</span></h3>
+                            <p className="text-[5px] leading-[9px] tracking-[-2%]">{item.caption}</p>
+                            <div className="flex items-center gap-[6px] w-fit">
+                                <div className="overflow-hidden">
+                                    <figure className="w-[19px] h-[19px] rounded-full overflow-hidden">
+                                        <Image src={item.src} alt={item.alt} className="object-cover w-full h-full" />
+                                    </figure>
+                                </div>
+                                <div className="flex flex-col">
+                                    <p className="font-medium text-[5px] tracking-[-2%]">{item.name}</p>
+                                    <p className="font-medium text-[5px] tracking-[-2%] text-[#EB4468]">{item.username}</p>
                                 </div>
                             </div>
-                        ))
-                    }
-                </div>
-            </section>
-            <p className="my-52">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid fugit similique, commodi accusantium rem non repellat quaerat modi voluptate, tempore veritatis quia repellendus ex odit est necessitatibus nisi quasi libero impedit dignissimos, repudiandae pariatur! Voluptatum ducimus aspernatur deleniti ea ratione nam est consequatur ex, aperiam voluptas ut cumque hic architecto inventore asperiores blanditiis doloremque ab quasi assumenda voluptatem dolorem beatae perspiciatis magnam! Hic iure libero sequi minima quos! Quam magnam mollitia quidem consequatur fugit illo est vero, ea accusantium neque fuga molestias debitis laboriosam eveniet reprehenderit voluptas maiores, quia saepe, necessitatibus aspernatur excepturi? Sapiente, eius dolores itaque, nobis incidunt assumenda exercitationem earum mollitia dolorum fugit rem iste, fuga expedita optio vero ex ad voluptatum ut. Veniam perspiciatis commodi, eos debitis sapiente nesciunt obcaecati autem dolor impedit! Optio neque itaque accusamus architecto similique dolorum reiciendis, nisi perferendis voluptas quo autem deserunt voluptates! Enim quis voluptatum repellendus ullam fuga dolorem quidem reiciendis consequuntur eligendi blanditiis recusandae aliquid ex voluptatem minima quod eos dicta optio modi tempora, pariatur nulla laudantium. Qui autem non tempore excepturi laboriosam amet temporibus sequi atque rem doloremque id adipisci repellat dolorum recusandae tenetur, molestias esse neque ipsum eius libero consequuntur inventore cum itaque? Consequuntur maxime doloremque quae quia assumenda. Sapiente doloremque ullam officiis natus, facere quas nemo nihil pariatur, dolorum porro aspernatur molestias commodi laudantium et, perferendis sunt autem! Ipsa explicabo distinctio molestiae, necessitatibus optio laudantium hic officiis error sequi alias impedit perspiciatis aperiam ducimus enim dolor iste maxime sunt velit minima aut atque, commodi veritatis omnis? Quo, dignissimos! Labore unde cupiditate, libero fuga atque quisquam, sit voluptatum earum dignissimos a aperiam culpa, repellat deserunt optio eligendi veniam sint. Cupiditate sit laboriosam a obcaecati tenetur assumenda voluptates, iusto amet iure? Reiciendis non ab sint corrupti, officia doloribus similique veritatis eaque expedita animi at consectetur excepturi odio debitis facilis eum optio totam ullam maxime assumenda. Eaque voluptates facere, laborum earum aliquam ipsam ad possimus officia placeat magni, aperiam minus animi sint perferendis voluptate corporis. Sed adipisci ipsa laboriosam itaque suscipit explicabo cupiditate modi non impedit eum quia consectetur, tempora asperiores beatae dolorem doloribus dolor aliquid illo labore. Consequatur ea blanditiis sit placeat laborum. Facere hic a, molestiae ducimus assumenda tenetur fugiat fuga consequatur. Iusto accusantium fugiat nemo dolore rerum fuga cum officiis molestiae natus id, tenetur sit eum. Nihil reprehenderit delectus blanditiis quod cupiditate saepe harum eveniet inventore ad neque tenetur ex, tempora expedita sequi quaerat, optio adipisci ab laudantium necessitatibus non. Odio consequuntur numquam cumque vel, rem maiores fugiat sunt atque iste eius animi minima. Tempora animi adipisci maiores nulla accusamus doloremque. Impedit qui architecto maiores dolores est saepe consectetur, ullam neque perferendis, enim ex illum accusamus, facilis dolor fuga ipsam dicta ducimus rem amet. Perferendis, harum facere dicta nam inventore officia unde ipsum reprehenderit enim aut temporibus autem recusandae veniam iure minus quaerat illo nobis! Consequatur, doloribus culpa ex corporis, repudiandae ipsam dicta quidem id ad quisquam pariatur repellendus iste ducimus temporibus non earum vitae aut dolor. Praesentium nihil minus possimus maxime optio sequi reiciendis deleniti magnam, eum, nobis exercitationem doloribus id alias incidunt ducimus at laudantium. Animi, accusamus nulla amet nam eum, iure nisi ipsam culpa quae sed, veniam deleniti facilis ut voluptates dicta eveniet odit! Tempore quia, eius saepe animi similique sed recusandae quam omnis repudiandae! Labore quibusdam provident maxime error quam omnis esse, sit nobis, quos iure rerum, necessitatibus nam hic illo iste repellat iusto fuga. At quam, debitis dolorum nostrum odio aspernatur minus magni omnis totam molestias, eum quos sed. Ut ipsam dolores atque voluptatum sunt quod, excepturi vero animi quo, voluptas aliquam sequi autem dolorem iure assumenda incidunt dignissimos non asperiores minus nam at delectus? Porro mollitia quis placeat illum repellendus velit repellat delectus, impedit nam aliquid natus facilis itaque consequuntur quas, dolore dicta temporibus, debitis quisquam asperiores voluptate earum doloribus dolor molestias blanditiis! Quod, facilis quia. Sunt minima laudantium eaque, possimus ea, impedit iste repellendus, harum itaque nesciunt sed dolores iure qui deserunt in perferendis facilis odio fuga consequuntur dignissimos? Distinctio ea magnam praesentium. Quia quis sint temporibus illo recusandae et at atque molestiae quos tempora. In blanditiis nulla corrupti placeat ipsa dignissimos ab accusantium odio. Voluptatum iusto eaque velit! Sed eveniet repudiandae et, animi laudantium at eos quo nihil iste esse culpa omnis perferendis quasi fugiat accusantium vitae! Itaque iste eum labore sed doloribus eius officiis magnam ipsum voluptatem. Minus magni quas, quod doloremque nobis voluptatum culpa dolorum quibusdam odio nemo ratione iusto. Dicta, atque praesentium! Distinctio at doloribus labore. Molestiae in, tempora quia assumenda, iste amet distinctio laudantium illo maxime ipsum totam temporibus labore maiores voluptas incidunt ut similique quidem hic inventore a, laborum quas. Temporibus quam excepturi velit quidem sunt, voluptatem voluptatum! Fugiat mollitia impedit minus doloribus quidem distinctio ratione voluptatem, ut asperiores voluptas quasi, ex ipsum dignissimos similique beatae itaque odio nemo fuga. Dolore sequi inventore ipsam soluta rem eligendi nulla, vero, obcaecati beatae debitis possimus maiores vitae animi, ipsum vel? Dignissimos autem corrupti doloribus eveniet commodi. Vero deleniti minus, delectus unde quasi quia exercitationem, recusandae amet laboriosam quaerat mollitia odit alias id excepturi ipsa. Id, mollitia porro repellendus fuga amet esse ducimus vero velit molestias tenetur nostrum debitis ea magnam consequatur reprehenderit ipsam quasi praesentium, natus similique hic ratione itaque obcaecati eum necessitatibus? Quibusdam possimus consequatur ipsam omnis! Porro explicabo natus quia, pariatur earum necessitatibus ipsum non numquam perspiciatis optio, quaerat praesentium labore, quos enim cum autem. Minima rem ea, in enim nesciunt qui sapiente nobis, veniam voluptatem quod tempore ratione consequatur commodi tenetur velit est deserunt. Adipisci ullam quae enim! Molestias et consectetur quo expedita quasi vel neque facilis excepturi voluptatum modi laborum recusandae ex aut, iure odio! Aut doloremque maiores fugiat ea. Facere dolores officiis esse quae exercitationem ullam voluptates neque voluptatibus, omnis sunt non iste aspernatur ea, minima, optio vel odio repudiandae alias fugiat magnam. Provident ea tempora, nisi veniam perferendis laborum rem laboriosam consectetur libero quod itaque ipsam repellat perspiciatis, tempore harum consequatur unde aut officiis. Itaque commodi, fugiat suscipit totam rerum beatae reprehenderit. Architecto libero, ad aut quibusdam unde mollitia beatae.
-            </p>
-        </>
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
     );
 }
 

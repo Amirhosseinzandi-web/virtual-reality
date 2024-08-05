@@ -5,7 +5,11 @@ import headsetLogoFour from "../public/pictures/headset-logo-four.png"
 import personLogoOne from "../public/pictures/person-one.jpg"
 import personLogoTwo from "../public/pictures/person-two.png"
 import personLogoThree from "../public/pictures/person-three.png"
-
+import companyvalueLogoOne from "../public/pictures/company-value-logo-one.svg"
+import companyvalueLogoTwo from "../public/pictures/company-value-logo-two.svg"
+import companyvalueLogoThree from "../public/pictures/company-value-logo-three.svg"
+import companyvalueLogoFour from "../public/pictures/company-value-logo-four.svg"
+import heartLogo from "../public/pictures/heart-logo.svg"
 
 
 export const localization = {
@@ -73,7 +77,7 @@ export const pageLevelLocalization = {
                     alt: "Denny Hilguston",
                     name: "Denny Hilguston",
                     username: "@denny.hill"
-                } ,
+                },
                 {
                     title: "starstarstar",
                     caption: "VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap.",
@@ -81,7 +85,7 @@ export const pageLevelLocalization = {
                     alt: "Vani Pandey",
                     name: "Vani Pandey",
                     username: "@vani.pandey"
-                } ,
+                },
                 {
                     title: "starstarstar",
                     caption: "I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
@@ -89,6 +93,32 @@ export const pageLevelLocalization = {
                     alt: "milly Singh",
                     name: "milly Singh",
                     username: "@milly.singh"
+                }
+            ]
+        },
+        companyValue: {
+            title: "Our company values culture",
+            caption: "We specialize in creating visual identities for products and branda in your company.",
+            heartLogo: heartLogo,
+            logos: [
+                {
+                    src: companyvalueLogoOne,
+                    title: "Be Sincere",
+                    alt: "logo"
+                },
+                {
+                    src: companyvalueLogoTwo,
+                    title: "Stronger together",
+                    alt: "logo"
+                }, {
+                    src: companyvalueLogoThree,
+                    title: "Keep it simple",
+                    alt: "logo"
+                },
+                {
+                    src: companyvalueLogoFour,
+                    title: "Take intelligent risks",
+                    alt: "logo"
                 }
             ]
         }
