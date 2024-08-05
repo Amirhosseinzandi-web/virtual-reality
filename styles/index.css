@@ -92,3 +92,12 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.4px);
 }
+
+.bg-gradient-purple {
+    background: linear-gradient(to bottom, #2F0643, #200626, #09010E);
+    border: 1px solid #B936F523;
+}
+
+.small-boxes-bg {
+    background: linear-gradient(to bottom, #341B38, #251021, #130613);
+}

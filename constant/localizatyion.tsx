@@ -2,6 +2,9 @@ import headsetLogoOne from "../public/pictures/headset-logo-one.png"
 import headsetLogoTwo from "../public/pictures/headset-logo-two.png"
 import headsetLogoThree from "../public/pictures/headset-logo-three.png"
 import headsetLogoFour from "../public/pictures/headset-logo-four.png"
+import personLogoOne from "../public/pictures/person-one.jpg"
+import personLogoTwo from "../public/pictures/person-two.png"
+import personLogoThree from "../public/pictures/person-three.png"
 
 
 
@@ -56,6 +59,36 @@ export const pageLevelLocalization = {
                     alt: "logo",
                     title: "TPCASTT",
                     caption: "Method is great to start students reading and inferring with little assistance from the instructor"
+                }
+            ]
+        },
+        whatOurClients: {
+            title: "What our clients say",
+            caption: "See what our customer say about us. It really matter for us. How good or bad we will make ir for evaluation to make EhyalLive better.",
+            smallBoxes: [
+                {
+                    title: "starstarstar",
+                    caption: "“I know in real-time where the money is spent,and I don’t have to lend out the company’s credit card anymore. What a relief!”",
+                    src: personLogoOne,
+                    alt: "Denny Hilguston",
+                    name: "Denny Hilguston",
+                    username: "@denny.hill"
+                } ,
+                {
+                    title: "starstarstar",
+                    caption: "VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap.",
+                    src: personLogoTwo,
+                    alt: "Vani Pandey",
+                    name: "Vani Pandey",
+                    username: "@vani.pandey"
+                } ,
+                {
+                    title: "starstarstar",
+                    caption: "I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
+                    src: personLogoThree,
+                    alt: "milly Singh",
+                    name: "milly Singh",
+                    username: "@milly.singh"
                 }
             ]
         }
