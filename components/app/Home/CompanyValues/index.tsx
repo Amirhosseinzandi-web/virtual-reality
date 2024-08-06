@@ -11,7 +11,7 @@ const CompanyValuesComponent = () => {
         <section className="mt-[86px] flex flex-col md:flex-row gap-[50px] relative">
             <div className="flex flex-col gap-[22px] pt-[7px]">
                 <h3 className="orbitron font-bold text-[19px] leading-6 max-w-[224px] relative">{home.companyValue.title}
-                    <figure className="w-[18px] h-[18px] overflow-hidden absolute right-[125px] bottom-[2px]">
+                    <figure className="w-[18px] h-[18px] overflow-hidden inline-flex translate-y-[3px] ml-[1px]">
                         <Image src={home.companyValue.heartLogo} alt="heart-logo" className="w-full h-full" />
                     </figure>
                 </h3>

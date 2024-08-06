@@ -22,7 +22,7 @@ const ProductShowcase = () => {
                             <div className="absolute left-0 bottom-0 py-[6px] px-[12px] flex justify-center items-center blur-content">
                                 <div className="flex flex-col gap-[6px]">
                                     <p className="orbitron font-semibold text-[7px]">{item.title}</p>
-                                    <p className="text-[7px] tracking-[-2%] max-w-[105px]">{item.caption}</p>
+                                    <p className="text-[7px] max-w-[105px]">{item.caption}</p>
                                 </div>
                             </div>
                         </div>
