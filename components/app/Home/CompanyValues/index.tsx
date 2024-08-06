@@ -8,34 +8,31 @@ import Image from "next/image";
 const CompanyValuesComponent = () => {
     const { home } = pageLevelLocalization
     return (
-        <>
-            <section className="mt-[86px] flex flex-col md:flex-row gap-[50px]">
-                <div className="flex flex-col gap-[22px] pt-[7px]">
-                    <h3 className="orbitron font-bold text-[19px] leading-6 max-w-[224px] relative">{home.companyValue.title}
-                        <figure className="w-[18px] h-[18px] overflow-hidden absolute right-[125px] bottom-[2px]">
-                            <Image src={home.companyValue.heartLogo} alt="heart-logo" className="w-full h-full" />
-                        </figure>
-                    </h3>
-                    <p className="text-xs leading-[14px] text-white/85 md:max-w-[231px]">{home.companyValue.caption}</p>
-                </div>
+        <section className="mt-[86px] flex flex-col md:flex-row gap-[50px] relative">
+            <div className="flex flex-col gap-[22px] pt-[7px]">
+                <h3 className="orbitron font-bold text-[19px] leading-6 max-w-[224px] relative">{home.companyValue.title}
+                    <figure className="w-[18px] h-[18px] overflow-hidden absolute right-[125px] bottom-[2px]">
+                        <Image src={home.companyValue.heartLogo} alt="heart-logo" className="w-full h-full" />
+                    </figure>
+                </h3>
+                <p className="text-xs leading-[14px] text-white/85 md:max-w-[231px]">{home.companyValue.caption}</p>
+            </div>
 
-                <div className="grid grid-cols-2 gap-[17px] w-full max-w-[400px] mx-auto md:w-auto md:max-w-[unset] md:mx-0">
-                    {
-                        home.companyValue.logos.map((item, ind) => (
-                            <div key={ind} className="flex flex-col items-center gap-[5px]">
-                                <figure className="w-fit h-fit overflow-hidden">
-                                    <Image src={item.src} alt={item.alt} className="w-full h-full" />
-                                </figure>
-                                <figcaption className="font-semibold text-[7px]">{item.title}</figcaption>
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
-            <p className="my-44">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ipsam commodi corrupti porro consequatur, reprehenderit magni nihil autem illo corporis explicabo aspernatur id eius labore et non. Perferendis temporibus hic, voluptas eaque quo numquam, doloremque sint dignissimos nesciunt pariatur, et voluptatum aperiam optio ad necessitatibus doloribus quam ut? Hic recusandae iusto odit, nostrum temporibus quos sapiente accusamus deserunt modi magni numquam quo in. Sapiente quae tenetur vitae recusandae, numquam eveniet architecto ipsa blanditiis suscipit soluta exercitationem sint sunt hic quo accusantium praesentium. Odio minima ex, modi officia officiis aliquam eos eveniet! Voluptas consequatur officiis provident eos, laborum eum veritatis esse inventore sit eius velit nesciunt doloremque recusandae voluptates magni autem maiores eaque odit. Atque veniam pariatur molestias iusto voluptatibus cumque numquam praesentium, ipsa quos reiciendis, vel, voluptate debitis at itaque. Impedit iste ipsam quas vitae laudantium doloremque. Eaque voluptates consequuntur quasi laborum, cum nemo quae a placeat modi aperiam reiciendis pariatur ipsam mollitia veniam iste impedit culpa dolores asperiores qui consectetur tempora! Error, sit nobis nihil maxime omnis non tempora quaerat perferendis quasi alias facilis distinctio, quae neque quo molestiae repellendus sed consectetur explicabo accusantium asperiores cum! Expedita, ipsa atque dolorum qui quibusdam nulla magnam beatae eaque voluptatem cumque deleniti in pariatur, eveniet repellendus vel tenetur officia accusantium aliquam hic ut commodi sit adipisci nihil voluptate? Consectetur inventore, animi autem soluta eveniet ullam ex nulla, dolorem ipsam rem voluptatem! Aspernatur eligendi ex voluptates quae laborum alias deleniti quidem laboriosam, voluptatem, quisquam incidunt maxime omnis et id odio cum adipisci ducimus temporibus quaerat assumenda repudiandae deserunt debitis sunt! Molestias saepe non, corporis quae rem fugiat ea sapiente quia sed laudantium, hic a blanditiis distinctio ullam et similique. Maiores, repudiandae sit! Eaque animi veniam est. Aperiam minima et, mollitia quas, incidunt eveniet, soluta placeat officia excepturi debitis quasi magnam ducimus expedita eum? Quos quasi, est laudantium error molestias sequi illo ab voluptatum, aperiam possimus, minima quisquam iure perspiciatis assumenda quod delectus libero vitae quia impedit at architecto placeat hic! Cupiditate minus tempora, maxime sit corporis non optio ipsam debitis at labore deserunt vel ipsa sequi repellat corrupti aliquid sint quis. Magni molestiae vel non aut a minima quae, placeat perspiciatis voluptatum aliquid reiciendis, nam dolore voluptate architecto eius repellat amet et quod illo debitis, fuga ratione ea rem nulla. Mollitia, impedit dolorem quam at quis molestiae quisquam ut nobis hic! Ut voluptatem dicta modi praesentium quibusdam repellat velit reprehenderit quidem. Veniam incidunt minima tempore dolor rem ipsa autem eligendi esse recusandae nobis. Placeat recusandae laborum aperiam voluptas. Nesciunt dolorum iste consectetur ullam sequi sed et optio, laborum tempora, deleniti vero quidem voluptate quis dolore. Minima, veniam eius fugit error, porro, corrupti repudiandae quod soluta minus aperiam dolorum quo consequuntur perspiciatis rem tenetur. Iusto, cupiditate distinctio. Laboriosam officiis suscipit, quaerat quidem error repellat doloremque illo vero quas labore eaque! Ex, a molestiae! Minus numquam dolore ab quas architecto esse magnam incidunt, consequatur excepturi quisquam voluptatem debitis maxime explicabo atque velit quam dolor omnis! Cum, molestiae accusantium magnam qui dolor laudantium neque ut. Ea, sint architecto. Delectus ipsa obcaecati nulla officia temporibus exercitationem numquam voluptas eum eaque unde error maiores praesentium assumenda suscipit culpa, aut molestias libero itaque odio! Porro asperiores dolores ratione, cum quidem ducimus laudantium suscipit sint doloremque corporis atque delectus, consequuntur eveniet perferendis aut possimus voluptates similique? Eum voluptatum praesentium iure molestiae accusamus quam harum, deserunt veniam ipsum qui, molestias quos impedit adipisci. Ducimus, facilis asperiores deserunt fugiat voluptates distinctio eligendi eum repellendus non natus accusantium quisquam cum assumenda consequatur impedit rerum iste quo nihil nesciunt. Veritatis, doloribus. Est dicta distinctio aperiam molestias excepturi ex ipsum. Ipsa asperiores explicabo reiciendis quis modi quae nostrum fugit dolorum eveniet quasi cumque repellat deleniti perferendis voluptatum impedit velit fuga dolor, quaerat obcaecati accusamus libero voluptate. Ipsa explicabo maiores iste cumque delectus aliquid eum, id ipsum iure aspernatur minus consectetur pariatur, eius aut quibusdam iusto officia dolorum repudiandae totam! Possimus autem, reiciendis perferendis est dolorem saepe mollitia ducimus voluptatibus assumenda nemo, maiores numquam placeat natus aut dolores? Error reiciendis, impedit autem non itaque sunt quidem illo placeat nihil voluptatem consequuntur deleniti accusantium repellendus nisi eligendi voluptate facilis ullam sit pariatur? Distinctio saepe reiciendis dolore, temporibus et dolorum deleniti ut nesciunt ipsam eius similique explicabo quibusdam, magni suscipit accusamus? Tempore deserunt adipisci culpa dolores iure? Ratione ipsam, minus soluta provident voluptatem quia fugit saepe, accusamus, iusto libero sequi facilis est quo itaque laudantium? Neque excepturi blanditiis totam ipsum quasi amet similique voluptatem labore odio quisquam rerum dignissimos, quis alias quam fugiat optio sequi doloremque ullam fuga quo! Harum nihil deleniti ipsam aspernatur, saepe, culpa omnis, sint vitae voluptatibus placeat labore nam cum. Ea minima nostrum quidem iste porro aut atque, reprehenderit non obcaecati aperiam, cum, amet quasi assumenda? Quas autem aut, laboriosam nesciunt alias praesentium illum eveniet reprehenderit? Libero eveniet maxime debitis repellat esse, eos ratione beatae odio ipsa iusto aspernatur architecto iste dolorem, fuga accusantium repellendus quisquam deserunt placeat modi eaque voluptatem neque. Est rerum corrupti doloremque velit odit at fugiat nihil unde modi eum. Unde praesentium a aut asperiores ipsa commodi, tenetur et animi enim maiores, quas, quo perspiciatis iusto labore assumenda totam expedita rem cum. Cumque expedita officiis cupiditate quae saepe corrupti laudantium dolores eum quaerat, alias perspiciatis minus impedit similique temporibus possimus, dolor a quos. Ratione nobis molestias odit at ipsum, sapiente, repudiandae molestiae assumenda iure vitae sit dolore nisi blanditiis iusto neque dolor sed. Perspiciatis illo, ad consequatur nam expedita sed quo reprehenderit accusamus necessitatibus unde voluptates suscipit laudantium aliquam et repellendus velit doloremque earum id eum sequi tempora. Nostrum totam iste sed, ullam in provident illo dignissimos consequatur dicta architecto! Sint, laborum? Totam quae laudantium numquam libero atque laboriosam beatae enim harum? Sunt dignissimos error est officia tempore eius porro ducimus sed deleniti, dicta quisquam, eligendi magni sequi minima cum fugit! Molestias, iure. Modi, obcaecati cupiditate cumque nisi dolor, delectus sit quae, quisquam illum necessitatibus consequuntur neque rem laborum possimus eveniet similique error placeat accusantium blanditiis omnis officia! Labore porro voluptatibus voluptate commodi, deleniti earum adipisci nihil accusamus nemo animi.
-            </p>
-        </>
+            <div className="grid grid-cols-2 gap-[17px] w-full max-w-[400px] mx-auto md:w-auto md:max-w-[unset] md:mx-0">
+                {
+                    home.companyValue.logos.map((item, ind) => (
+                        <div key={ind} className="flex flex-col items-center gap-[5px]">
+                            <figure className="w-fit h-fit overflow-hidden">
+                                <Image src={item.src} alt={item.alt} className="w-full h-full" />
+                            </figure>
+                            <figcaption className="font-semibold text-[7px]">{item.title}</figcaption>
+                        </div>
+                    ))
+                }
+            </div>
+            <div className="gradientBubble absolute z-[-1] bottom-[-217px] left-[-330px]"></div>
+            <div className="gradientBubble absolute z-[-1] bottom-[-180px] right-[-350px]"></div>
+        </section>
     );
 }
 

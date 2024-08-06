@@ -33,7 +33,7 @@
 
 .gradient-btn {
     background: linear-gradient(to right, #BC3CD8, #C54B8C);
-    padding: 13px 24px;
+    /* padding: 13px 24px; */
 }
 
 .mobile-menu {
@@ -100,4 +100,5 @@
 
 .small-boxes-bg {
     background: linear-gradient(to bottom, #341B38, #251021, #130613);
+    border: 1px solid #B936F523;
 }

@@ -10,6 +10,9 @@ import companyvalueLogoTwo from "../public/pictures/company-value-logo-two.svg"
 import companyvalueLogoThree from "../public/pictures/company-value-logo-three.svg"
 import companyvalueLogoFour from "../public/pictures/company-value-logo-four.svg"
 import heartLogo from "../public/pictures/heart-logo.svg"
+import exploreProductArrowLogo from "../public/pictures/explore-product-arrow-logo.svg"
+import exploreProductStartLogo from "../public/pictures/explore-product-start-logo.svg"
+import twoHandLogo from "../public/pictures/two-hand-logo.svg"
 
 
 export const localization = {
@@ -121,6 +124,14 @@ export const pageLevelLocalization = {
                     alt: "logo"
                 }
             ]
+        },
+        exploreProducts: {
+            title: "Explore product in new way",
+            caption: "We specialize in creating visual identities for products and branda in your company.",
+            startBtn: "Start",
+            arrowLogo: exploreProductArrowLogo,
+            startLogo: exploreProductStartLogo ,
+            twoHandLogo : twoHandLogo
         }
     }
 }

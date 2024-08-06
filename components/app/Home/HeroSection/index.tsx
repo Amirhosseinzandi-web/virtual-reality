@@ -43,7 +43,7 @@ const HeroSection = () => {
                         {home.virtualTechnology}
                     </motion.p>
                     <div className="flex gap-[23px]">
-                        <button className="gradient-btn rounded text-[11px] font-bold">{home.getItNowBtn}</button>
+                        <button className="gradient-btn rounded text-[11px] font-bold px-[24px] py-[13px]">{home.getItNowBtn}</button>
                         <button className="text-[11px] font-bold">{home.exploreDevice}</button>
                     </div>
                     <div className="flex items-center gap-[14px]">
@@ -107,7 +107,7 @@ const HeroSection = () => {
                 <div className="w-full lg:w-[30%] flex flex-col justify-end gap-[20px] mt-11 lg:mt-0 lg:mb-[27px]">
                     <h2 className="orbitron font-black text-[21px] max-w-[250px] leading-[33px]">{home.newExperience}</h2>
                     <p className="text-xs max-w-[200px]">{home.youCanTry}</p>
-                    <button className="gradient-btn rounded w-fit text-[11px] font-bold">{home.getItNowBtn}</button>
+                    <button className="gradient-btn rounded w-fit text-[11px] font-bold px-[24px] py-[13px]">{home.getItNowBtn}</button>
 
                 </div>
             </section>

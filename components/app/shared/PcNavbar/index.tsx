@@ -12,7 +12,7 @@ const PcNavbar = () => {
                 <li className="cursor-pointer">{navbar.home}</li>
                 <li className="cursor-pointer">{navbar.company}</li>
                 <li className="cursor-pointer">{navbar.features}</li>
-                <li className="gradient-btn rounded cursor-pointer">{navbar.signUp}</li>
+                <li className="gradient-btn rounded cursor-pointer px-[24px] py-[13px]">{navbar.signUp}</li>
             </ul>
         </nav>
     );
