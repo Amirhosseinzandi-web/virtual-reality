@@ -25,15 +25,14 @@ const HeroSection = () => {
         <>
             <section className="hero-section-top mt-[83px] flex flex-col md:flex-row">
 
-                <div className="w-full md:w-[50%] flex flex-col gap-6">
-                    <motion.h1
-                        variants={hiddenToVisibleDelay(0, 2)}
-                        initial="hidden"
-                        animate="visible"
-                        className="text-[32px] font-black orbitron leading-[43px] max-w-[350px]"
-                    >
+                <motion.div
+                    variants={hiddenToVisibleDelay(0, 2)}
+                    initial="hidden"
+                    animate="visible"
+                    className="w-full md:w-[50%] flex flex-col gap-6">
+                    <h1 className="text-[32px] font-black orbitron leading-[43px] max-w-[350px]">
                         {home.letsExplore}
-                    </motion.h1>
+                    </h1>
                     <motion.p
                         variants={hiddenToVisibleDelay(1, 2)}
                         initial="hidden"
@@ -61,7 +60,7 @@ const HeroSection = () => {
                         <span className="block w-2 h-2 bg-white rounded-full"></span>
                         <p className="font-semibold text-[10px]">{home.peopleOnline}</p>
                     </div>
-                </div>
+                </motion.div>
 
                 <motion.div
                     variants={rightToLeftDelay(0, 1)}
@@ -84,7 +83,11 @@ const HeroSection = () => {
                 </motion.div>
             </section>
 
-            <section className="hero-section-bottom mt-24 lg:mt-0 flex flex-wrap min-h-[402px]">
+            <motion.section
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ amount: "some", once: true }}
+                className="hero-section-bottom mt-24 lg:mt-0 flex flex-wrap min-h-[402px]">
                 <div className="w-full lg:w-[70%] flex flex-wrap gap-[19px]">
                     <div className="w-full lg:w-auto relative">
                         <div className="gradientBubble absolute z-[-1] top-0 left-[-340px] translate-y-[-50%]"></div>
@@ -110,7 +113,7 @@ const HeroSection = () => {
                     <button className="gradient-btn rounded w-fit text-[11px] font-bold px-[24px] py-[13px]">{home.getItNowBtn}</button>
 
                 </div>
-            </section>
+            </motion.section>
 
             <section className=" w-[calc(100vw-16px)] lg:w-[482px] left-[50%] lg:left-[unset] translate-x-[-53%] lg:translate-x-[unset] p-[23px] h-[89px] relative overflow-hidden shape-polygon-div shape-polygon-item-div mt-[99px] flex justify-center items-center">
                 <div className="flex items-center gap-[46px] relative">

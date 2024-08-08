@@ -1,6 +1,7 @@
 "use client"
 
 import { pageLevelLocalization } from "@/constant/localizatyion";
+import { motion } from "framer-motion"
 import Image from "next/image";
 
 
@@ -10,7 +11,11 @@ const ProductShowcase = () => {
 
     const { home } = pageLevelLocalization
     return (
-        <section className="mt-[46px] flex flex-col gap-[20px] relative">
+        <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ amount: "some", once: true }}
+            className="mt-[46px] flex flex-col gap-[20px] relative">
             <p className="orbitron font-black text-[17px]">{home.mixedRealityHeadsets.title}</p>
             <div className="grid grid-cols-2 gap-3">
                 {
@@ -30,7 +35,7 @@ const ProductShowcase = () => {
                 }
             </div>
             <div className="gradientBubble absolute z-[-1] left-0 translate-x-[-54%] bottom-[-189px]"></div>
-        </section>
+        </motion.section>
     );
 }
 

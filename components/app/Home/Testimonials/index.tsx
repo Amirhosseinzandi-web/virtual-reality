@@ -2,14 +2,18 @@
 
 import { pageLevelLocalization } from "@/constant/localizatyion";
 import Image from "next/image";
-
+import { motion } from "framer-motion"
 
 
 
 const Testimonials = () => {
     const { home } = pageLevelLocalization
     return (
-        <section className="p-[27px] bg-gradient-purple mt-[53px] rounded-[7px] min-h-[161px] relative">
+        <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ amount: "some", once: true }}
+            className="p-[27px] bg-gradient-purple mt-[53px] rounded-[7px] min-h-[161px] relative">
             <div className="flex flex-col items-center gap-[18px] mx-auto text-center mb-4">
                 <p className="orbitron text-base md:text-[19px] font-bold">{home.whatOurClients.title}</p>
                 <p className="text-[9px] leading-[11px] text-white/85 max-w-[318px]">{home.whatOurClients.caption}</p>
@@ -35,7 +39,7 @@ const Testimonials = () => {
                     ))
                 }
             </div>
-        </section>
+        </motion.section>
     );
 }
 
